@@ -1,8 +1,3 @@
----
-
-### **2. `Harmonizer369.py` (ソースコード本体)**
-
-
 ```python
 # Harmonizer369.py
 
