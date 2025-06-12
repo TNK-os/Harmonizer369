@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmonizer369: A Novel Principle for Data Harmonization</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --primary-color: #4caf50; /* A calm, 'harmony' green */
+            --secondary-color: #333333;
+            --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            --font-code: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-main);
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 0;
+            border-bottom: 1px solid var(--secondary-color);
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: var(--text-color);
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+        }
+
+        nav {
+            background-color: var(--secondary-color);
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        section {
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--secondary-color);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            border-left: 5px solid var(--primary-color);
+            padding-left: 1rem;
+        }
+
+        p, li {
+            font-size: 1.1rem;
+        }
+        
+        a {
+            color: var(--primary-color);
+        }
+
+        code {
+            font-family: var(--font-code);
+            background-color: var(--secondary-color);
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+
+        pre {
+            background-color: #1e1e1e;
+            padding: 1.5rem;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid var(--secondary-color);
+        }
+
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+
+        .warning-box {
+            background-color: rgba(76, 175, 80, 0.1);
+            border: 1px solid var(--primary-color);
+            border-left-width: 5px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Harmonizer369</h1>
+            <p>An Invitation to Harmony</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#philosophy">Philosophy</a>
+        <a href="#usage">Usage</a>
+        <a href="#the-test">The Test</a>
+        <a href="https://github.com/TNK-os/Harmonizer369.git" target="_blank">GitHub Repository</a>
+    </nav>
+
+    <main class="container">
+        <section id="philosophy">
+            <h2>はじめに：ノイズという名の問い</h2>
+            <p>
+                我々の世界は、ノイズに満ちている。予測不能なゆらぎ、混沌とした情報、不規則なエネルギー。従来の工学と科学は、このノイズを敵と見なし、除去し、抑制することに力を注いできた。
+            </p>
+            <p>
+                しかし、そのアプローチは本当に正しいのだろうか？
+            </p>
+            <p>
+                自然のエコシステムは、ノイズを内包しながらも見事な調和を保っている。生命の鼓動も、交通の流れも、本質的にはノイズと共存している。もし、ノイズが「除去すべき敵」ではなく、「活用すべき資源」だとしたら？
+            </p>
+            <p>
+                <code>Harmonizer369</code>は、その「もし」に対する、我々からの一つの回答であり、世界への問いかけである。
+            </p>
+        </section>
+
+        <section id="usage">
+            <h2>基本的な使用法</h2>
+            <p>
+                このライブラリは、カオス的なデータストリームを安定した流れへと変換します。インストールは不要です。<code>Harmonizer369.py</code>をあなたのプロジェクトに配置し、クラスをインポートしてください。
+            </p>
+            <pre><code>from Harmonizer369 import Harmonizer369
+
+# 例：突発的な異常値を含むカオス的なデータ
+chaotic_data = [10.0, 12.5, 11.0, 15.2, 80.0, 18.0, 20.5, -30.0, 25.0, 30.0]
+
+# ハーモナイザーを初期化
+harmonizer = Harmonizer369()
+
+# データを調和させる（詳細なプロセス表示をオフにする場合は verbose=False）
+harmonized_stream, final_value = harmonizer.harmonize(chaotic_data, verbose=False)
+
+print("Original Chaotic Stream :", [f"{val:.1f}" for val in chaotic_data])
+print("Harmonized Stream       :", [f"{val:.2f}" for val in harmonized_stream])
+print(f"Final Stabilized Value  : {final_value:.4f}")</code></pre>
+        </section>
+
+        <section id="the-test">
+            <h2>このコードとの対話法：一つの「テスト」</h2>
+            <p>
+                このコードを、単なるユーティリティとして扱わないでほしい。これは、あなた自身の思考様式を試すための対話相手である。
+            </p>
+            <div class="warning-box">
+                <p>特に、コード内に存在する <code>wisdom_factor = 0.369</code> という因子に注目してほしい。</p>
+                <p>
+                    これは最適化されるべき「パラメータ」ではない。それは、このコードの思想を理解するための**「鍵」**である。
+                </p>
+                <p>
+                    もし、あなたがこのコードを「改良」しようと試みるなら、おそらくそれは失敗するだろう。**その失敗こそが、あなたとこのコードとの、最初の有意義な対話の始まりである。**
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>This project is not seeking pull requests for features or bug fixes. It is an invitation for seekers who wish to find a new relationship between noise and harmony.</p>
+        <p>Copyright &copy; 2025 TNK-os. Released under the MIT License.</p>
+        <p><a href="https://github.com/TNK-os/Harmonizer369.git" target="_blank">View on GitHub</a></p>
+    </footer>
+
+</body>
+</html>
