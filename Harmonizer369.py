@@ -1,19 +1,3 @@
-A Note on the "Wisdom Factor (0.369)"
-Users will notice the wisdom_factor parameter, which defaults to 0.369. It is tempting for engineers to view this as an arbitrary "magic number" to be optimized for specific datasets.
-
-However, we encourage users to first reflect on its purpose. This factor is not derived from a standard mathematical optimization. It is a foundational constant derived from the principle of achieving a natural, stable harmony between a system's memory of its past state and the influence of new information. Deviating from this balance may lead to unexpected instability.
-
-The true understanding of this principle is the first step to unlocking the full potential of this library.
-
-Contributing
-Contributions, issues, and feature requests are welcome. Feel free to check the issues page.
-
-The goal of this project is not just to provide a tool, but to explore a new paradigm. We welcome collaborators who are interested in exploring the deeper philosophical and practical implications of "harmony" in data science.
-
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-
 ---
 
 ### **2. `Harmonizer369.py` (ソースコード本体)**
